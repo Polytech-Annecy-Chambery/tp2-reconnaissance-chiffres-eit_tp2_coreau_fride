@@ -47,7 +47,7 @@ class Image:
     #   on retourne une nouvelle image binarisee
     #==============================================================================
     def binarisation(self, S):
-         """Cette fonction permet de binariser une image 
+        """Cette fonction permet de binariser une image 
         selon un seuil S défini par l'utilisateur"""
 		# creation d'une image vide
         im_bin = Image()
@@ -79,7 +79,7 @@ class Image:
     #   on retourne une nouvelle image recadree
     #==============================================================================
     def localisation(self):
-         """Cette fonction permet de recadrer une image autour d'une forme"""
+        """Cette fonction permet de recadrer une image autour d'une forme"""
 		# creation d'une image vide
         im_bin = Image()
         # affectation a l'image im_bin d'un tableau de pixels de meme taille
@@ -110,11 +110,13 @@ class Image:
         im_bin.H=l_max - l_min
         im_bin.W=c_max - c_min
         return (im_bin)
+        
 
     #==============================================================================
     # Methode de redimensionnement d'image
     #==============================================================================
     def resize(self, new_H, new_W):
+        
         # creation d'une image vide
         newim = Image()
        
@@ -126,6 +128,7 @@ class Image:
         newim.H= new_H
         newim.W= new_W
         return newim
+    
 
 
     #==============================================================================
@@ -148,4 +151,5 @@ class Image:
                     nb_pix_sim +=1
                     
         return nb_pix_sim/nb_pix_tot
-
+                    
+   
